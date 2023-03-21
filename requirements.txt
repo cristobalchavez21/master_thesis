@@ -1,0 +1,13 @@
+uproot
+awkward
+pandas
+matplotlib
+pyyaml
+tabulate
+hist[plot]
+scikit-learn
+plotly
+imbalanced-learn
+cloudpickle
+xgboost
+seaborn

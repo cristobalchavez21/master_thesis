@@ -1,0 +1,8 @@
+.venv
+*.root
+**/output
+*.pyc
+**/plots
+**/models
+**/logs
+*.npy
