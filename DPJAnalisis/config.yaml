@@ -1,0 +1,128 @@
+ttree:
+  files:
+    VBF_500757: ../../../Samples/latest/frvz_vbf_500757_02-00.root
+    VBF_500758: ../../../Samples/latest/frvz_vbf_500758_02-00.root
+    VBF_500759: ../../../Samples/latest/frvz_vbf_500759_02-00.root
+    VBF_500760: ../../../Samples/latest/frvz_vbf_500760_02-00.root
+    VBF_500761: ../../../Samples/latest/frvz_vbf_500761_02-00.root
+    VBF_500762: ../../../Samples/latest/frvz_vbf_500762_02-00.root
+    VBF_500763: ../../../Samples/latest/frvz_vbf_500763_02-00.root
+    VBF_500764: ../../../Samples/latest/frvz_vbf_500764_02-00.root
+  
+    GGF_508885: ../../../Samples/latest/merged/frvz_ggf_508885.root
+    GGF_508886: ../../../Samples/latest/merged/frvz_ggf_508886.root
+    GGF_508887: ../../../Samples/latest/merged/frvz_ggf_508887.root
+    GGF_508888: ../../../Samples/latest/merged/frvz_ggf_508888.root
+    GGF_508889: ../../../Samples/latest/merged/frvz_ggf_508889.root
+    GGF_508890: ../../../Samples/latest/merged/frvz_ggf_508890.root
+    GGF_508891: ../../../Samples/latest/merged/frvz_ggf_508891.root
+    GGF_508892: ../../../Samples/latest/merged/frvz_ggf_508892.root
+    GGF_508893: ../../../Samples/latest/merged/frvz_ggf_508893.root
+    
+    # QCD: ../../../Samples/latest/QCD_02-00.root
+    # TOP1: ../../../Samples/latest/top_02-22_1.root
+    # TOP2: ../../../Samples/latest/top_02-22_2.root
+    # TOP3: ../../../Samples/latest/top_02-22_3.root
+    # TOP4: ../../../Samples/latest/top_02-22_4.root
+    # Wjets: ../../../Samples/latest/Wjet_02-00.root
+    # # # Wjj: ../../../Samples/latest/wjj_ewk.root
+    # Zjets: ../../../Samples/latest/Zjet_02-00.root
+    # # # Zjj: ../../../Samples/zjj_ewk.root
+
+  recover_branches:
+    - weight
+    - scale1fb
+    - intLumi
+    - jet1_pt
+    - jet1_eta
+    - jet1_phi
+    - jet1_e
+    - jet2_pt
+    - jet2_eta
+    - jet2_phi
+    - jet2_e
+    - njet30
+    - mjj
+    - detajj
+    - signetajj
+    - dphijj
+    # - dphi_j1met
+    - min_dphi_jetmet
+    # - nLJ20
+    - nLJjets20
+    # - LJjet1_pt
+    # - LJjet1_eta
+    # - LJjet1_phi
+    # - LJjet1_m
+    # - LJjet1_width
+    # - LJjet1_EMfrac
+    # - LJjet1_timing
+    # - LJjet1_jvt
+    # - LJjet1_gapRatio
+    # - LJjet1_BIBtagger
+    # - LJjet1_DPJtagger
+    # - LJjet1_truthDPidx
+    # - nLJmus20
+    # - LJmuon_pt
+    # - LJmuon_eta
+    # - LJmuon_phi
+    - MET
+    - METsig
+    - METOSqrtHT
+    - neleSignal
+    - nmuSignal
+    # - neleBaseline
+    # - nmuBaseline
+    # - hasBjet
+    - metTrig
+  recover_branches_ggf:
+    - weight
+    # - scale1fb
+    # - intLumi
+    # - jet1_pt
+    # - jet1_eta
+    # - jet1_phi
+    # - jet1_e
+    # - jet2_pt
+    # - jet2_eta
+    # - jet2_phi
+    # - jet2_e
+    # - njet30
+    # - mjj
+    # - detajj
+    # - signetajj
+    # - dphijj
+    - MET
+    - METsig
+    - METOSqrtHT
+    # - jets_pt_sorted
+    # - jets_eta_sorted
+    # - jets_phi_sorted
+    # - jets_e_sorted
+    # - metTrig
+    - sumWeightPRW
+    - amiXsection
+    - dsid
+    - filterEff
+    - kFactor
+    - RunNumber
+detector :
+  mevGev: 1000  
+  lum: 140 # Luminosity @ LHC Run-2 (fb-1)
+
+cuts_config:
+  min_nLJjets20: 1
+  min_MET: 225000
+  min_njet30: 1
+  min_mjj: 1000000
+  min_detajj: 3
+  min_jet1pT: 90000
+  min_dphijetmet: 0.4
+  min_LJjet1_gapRatio: 0.9
+  min_LJjet1_BIBtagger: 0.2
+  max_LJjet1_jvt: 0.4
+  min_LJjet1_DPJtagger: 0.95
+  max_dphijj: 2.5
+  min_nLJmus20: 0
+  min_neleSignal: 0 
+  min_nmuSignal: 0 
