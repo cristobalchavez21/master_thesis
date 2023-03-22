@@ -1,31 +1,17 @@
-# DPJ
+# RNN model
 
-For branching the git repo follow the name convetion:
-{name}/identifier
+TensorFlow recursive neural network model trained using the following features:
 
-for example:
-    mhaacke/xgboost_cut_2
+- Leading jets variables pT, ϕ, η, E (for each leading jet)
 
+### Important files
+Preprocessing done in prepare_data.ipynb
 
+Training done in file main.ipynb
 
-## Getting started
+Plotting of main results in plotting.ipynb
 
-### Runing in batch
-
-For instalation from root of the proyect:
-
-```bash
-make venv
-source .venv/bin/activate
-make install
-make run
-```
-
-note: you need to put the path to your samples in the config.yaml
-
-if more indepth you can use the notebook to test
-
-### Runing in jupyter
+### Venv instructions
 
 at the first time run 
 
@@ -39,4 +25,5 @@ pip install ipykernel
 
 After doing this, in vscode should appear as a valid kernel and must be chosen
 
-
+### More information
+For more information see the full thesis and presentation on thr wiki.
