@@ -28,3 +28,5 @@ pip install ipykernel
 After doing this, in vscode should appear as a valid kernel and must be chosen
 
 
+### More information
+For more information see the full thesis and presentation on thr wiki.
