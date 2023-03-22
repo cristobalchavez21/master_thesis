@@ -6,10 +6,11 @@ XGBoost model trained using the following features:
 - ∆ηjj 
 - MET 
 - Leading jets variables pT , η, E (for each leading jet)
-- DPJ centrlity
+- DPJ centrality
 
-## 
+### Important files
 Training done in file main.ipynb
+
 Plotting of main results in plotting.ipynb
 
 #### Venv instructions
