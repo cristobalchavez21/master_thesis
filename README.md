@@ -1,31 +1,18 @@
-# DPJ
+# XGBoost model
 
-For branching the git repo follow the name convetion:
-{name}/identifier
+XGBoost model trained using the following features:
+- mjj
+- ∆ϕjj
+- ∆ηjj 
+- MET 
+- Leading jets variables pT , η, E (for each leading jet)
+- DPJ centrlity
 
-for example:
-    mhaacke/xgboost_cut_2
+## 
+Training done in file main.ipynb
+Plotting of main results in plotting.ipynb
 
-
-
-## Getting started
-
-### Runing in batch
-
-For instalation from root of the proyect:
-
-```bash
-make venv
-source .venv/bin/activate
-make install
-make run
-```
-
-note: you need to put the path to your samples in the config.yaml
-
-if more indepth you can use the notebook to test
-
-### Runing in jupyter
+#### Venv instructions
 
 at the first time run 
 
